@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: #f8f2f3;
+    color: #463b40;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heart {
+    font-size: 42px;
+    color: #d98b9d;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 5px 0;
+    color: #a65f76;
+}
+
+header p,
+.hint {
+    color: #9a858d;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(120, 75, 90, 0.06);
+}
+
+h2 {
+    font-size: 20px;
+    color: #a65f76;
+    margin-top: 0;
+}
+
+.hint {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 9px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f3edef;
+    cursor: pointer;
+}
+
+.option input {
+    width: 17px;
+    height: 17px;
+    accent-color: #c77f95;
+    cursor: pointer;
+}
+
+.option span {
+    flex: 1;
+}
+
+.option a {
+    color: #b56d84;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.other {
+    margin-top: 20px;
+}
+
+.other label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 85px;
+    padding: 12px;
+    border: 1px solid #ead9df;
+    border-radius: 10px;
+    resize: vertical;
+    font: inherit;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background: #c77f95;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #ae687e;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.success {
+    text-align: center;
+    background: white;
+    border-radius: 18px;
+    padding: 35px 20px;
+    margin-top: 20px;
+}
+
+.success h2 {
+    margin-bottom: 10px;
+}
+
+.success p {
+    color: #a65f76;
+}
+
+.success-heart {
+    font-size: 42px;
+    color: #d98b9d;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    color: #b49da6;
+    font-size: 13px;
+    margin-top: 25px;
+}

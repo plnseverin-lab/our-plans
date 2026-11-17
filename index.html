@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши планы ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <header>
+            <div class="heart">♡</div>
+            <h1>Наши планы</h1>
+            <p>Чем займёмся завтра?</p>
+        </header>
+
+        <form id="plansForm" action="https://formsubmit.co/plnseverin@gmail.com" method="POST"
+            enctype="multipart/form-data">
+
+            <section class="card">
+                <h2>🎨 1. Какие занятия у нас будут?</h2>
+                <p class="hint">Можно выбрать несколько вариантов</p>
+
+                <label class="option">
+                    <input type="checkbox" name="activity" value="Плести из бисера">
+                    <span>Плести из бисера</span>
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="activity" value="Портреты из бумаги">
+                    <span>Портреты из бумаги</span>
+                    <a href="https://vt.tiktok.com/ZSpnB1YsB/" target="_blank" rel="noopener">Подробнее</a>
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="activity" value="Рисовать персонажей по описанию">
+                    <span>Рисовать персонажей по описанию</span>
+                    <a href="https://vt.tiktok.com/ZSpnkvp1u/" target="_blank" rel="noopener">Подробнее</a>
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="activity" value="Рисовать человечков по частям">
+                    <span>Рисовать человечков по частям</span>
+                    <a href="https://vt.tiktok.com/ZSpnkCvr2/" target="_blank" rel="noopener">Подробнее</a>
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="activity" value="Отпечатки пальцев — рисуночки">
+                    <span>Отпечатки пальцев — рисуночки</span>
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="activity" value="Лепить из пластилина">
+                    <span>Лепить из пластилина</span>
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="activity" value="Раскраски пополам">
+                    <span>Раскраски пополам</span>
+                </label>
+
+                <div class="other">
+                    <label for="otherActivity">Другое (если есть идеи)</label>
+                    <textarea id="otherActivity" name="otherActivity"
+                        placeholder="Может, придумаешь что-нибудь ещё?"></textarea>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>🍬 2. Что кушаем?</h2>
+                <p class="hint">Тоже можно выбрать несколько вариантов</p>
+
+                <label class="option">
+                    <input type="checkbox" name="food" value="Бамбл кофе">
+                    <span>Бамбл кофе</span>
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="food" value="Чипсы">
+                    <span>Чипсы</span>
+                </label>
+
+                <label class="option">
+                    <input type="checkbox" name="food" value="Конфетки сливочные">
+                    <span>Конфетки сливочные</span>
+                </label>
+
+                <div class="other">
+                    <label for="otherFood">Другое (если есть идеи)</label>
+                    <textarea id="otherFood" name="otherFood" placeholder="Что ещё?"></textarea>
+                </div>
+            </section>
+            <input type="hidden" name="_subject" value="Наши планы ❤️">
+            <input type="hidden" name="_next" value="ССЫЛКА_НА_GITHUB_PAGES/success.html">
+            <button type="submit">Отправить ответы ❤️</button>
+            <input type="file" name="attachment" id="attachment" hidden>
+        </form>
+
+        <div id="successMessage" class="success hidden">
+            <div class="success-heart">♥</div>
+            <h2>Всё отправлено!</h2>
+            <p>Увидимся завтра, люблю ❤️</p>
+        </div>
+
+        <footer>Сделано с любовью ♡</footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
